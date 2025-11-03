@@ -17,9 +17,6 @@ const nextConfig = {
   // React strict mode
   reactStrictMode: true,
 
-  // Production optimizasyonları
-  swcMinify: true,
-
   // Headers - CDN ve güvenlik için
   async headers() {
     return [

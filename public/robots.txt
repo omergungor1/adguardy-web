@@ -1,0 +1,24 @@
+# robots.txt for adguardy.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://adguardy.com/sitemap.xml
+
+# Google Bot
+User-agent: Googlebot
+Allow: /
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+
+# Disallow admin/dashboard paths (if any)
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+
+# Crawl-delay
+Crawl-delay: 0
+
