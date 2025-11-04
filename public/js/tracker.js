@@ -1,5 +1,5 @@
 // public/js/tracker.js
-// AdsGuardsPro On-Site Tracking Script - Yeni Yapı
+// AdGuardy On-Site Tracking Script - Yeni Yapı
 // Tüm ziyaretçileri izler (ads/organik/direkt)
 
 (function () {
@@ -15,7 +15,7 @@
     // Debug log
     function log(...args) {
         if (CONFIG.debug) {
-            console.log('[AdsGuardsPro]', ...args);
+            console.log('[AdGuardy]', ...args);
         }
     }
 
@@ -296,5 +296,5 @@
         initTracking();
     }
 
-    log('AdsGuardsPro Tracker yüklendi v2.0');
+    log('AdGuardy Tracker yüklendi v2.0');
 })();

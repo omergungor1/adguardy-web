@@ -26,9 +26,9 @@ export default function PrivacyPolicyPage() {
               <section>
                 <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">1. Giriş</h2>
                 <p className="text-lg leading-relaxed text-gray-700">
-                  AdGuardy olarak kişisel verilerinizin güvenliği ve gizliliği bizim için son derece önemlidir. 
-                  Bu Gizlilik Politikası, hizmetlerimizi kullanırken toplanan, işlenen ve saklanan verilerin 
-                  nasıl yönetildiğini açıklamaktadır. Politikamız, 6698 sayılı Kişisel Verilerin Korunması 
+                  AdGuardy olarak kişisel verilerinizin güvenliği ve gizliliği bizim için son derece önemlidir.
+                  Bu Gizlilik Politikası, hizmetlerimizi kullanırken toplanan, işlenen ve saklanan verilerin
+                  nasıl yönetildiğini açıklamaktadır. Politikamız, 6698 sayılı Kişisel Verilerin Korunması
                   Kanunu (KVKK) ve Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) ile tam uyumludur.
                 </p>
               </section>
@@ -98,7 +98,7 @@ export default function PrivacyPolicyPage() {
                     Bu süre sonunda tüm veriler otomatik olarak silinir.
                   </p>
                   <p className="mt-3 text-lg text-gray-700">
-                    <strong className="text-[#3B82F6]">Hesap Silme:</strong> Hesabınızı sildiğinizde, tüm verileriniz 
+                    <strong className="text-[#3B82F6]">Hesap Silme:</strong> Hesabınızı sildiğinizde, tüm verileriniz
                     7 gün içinde kalıcı olarak silinir.
                   </p>
                 </div>
@@ -161,8 +161,8 @@ export default function PrivacyPolicyPage() {
               <section>
                 <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">7. Çerezler (Cookies)</h2>
                 <p className="text-lg leading-relaxed text-gray-700">
-                  Web sitemizde kullanıcı deneyimini iyileştirmek için çerezler kullanıyoruz. Çerezler, 
-                  tarayıcınıza kaydedilen küçük metin dosyalarıdır. Çerez tercihlerinizi istediğiniz zaman 
+                  Web sitemizde kullanıcı deneyimini iyileştirmek için çerezler kullanıyoruz. Çerezler,
+                  tarayıcınıza kaydedilen küçük metin dosyalarıdır. Çerez tercihlerinizi istediğiniz zaman
                   tarayıcı ayarlarınızdan değiştirebilirsiniz.
                 </p>
               </section>
@@ -191,7 +191,7 @@ export default function PrivacyPolicyPage() {
               <section>
                 <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">9. Değişiklikler</h2>
                 <p className="text-lg leading-relaxed text-gray-700">
-                  Bu Gizlilik Politikası, yasal gereksinimlere ve hizmet değişikliklerine bağlı olarak güncellenebilir. 
+                  Bu Gizlilik Politikası, yasal gereksinimlere ve hizmet değişikliklerine bağlı olarak güncellenebilir.
                   Önemli değişikliklerde sizi e-posta ile bilgilendireceğiz. Güncel versiyonu her zaman web sitemizde bulabilirsiniz.
                 </p>
               </section>
@@ -206,8 +206,8 @@ export default function PrivacyPolicyPage() {
                   <p><strong>Adres:</strong> İstanbul, Türkiye</p>
                 </div>
                 <div className="mt-6">
-                  <a 
-                    href="/contact" 
+                  <a
+                    href="/contact"
                     className="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-[#1BCFB4] transition-all hover:bg-gray-100"
                   >
                     İletişim Formu
