@@ -13,13 +13,13 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="mb-8"
           >
-            <h1 className="mb-6 text-5xl font-bold leading-tight text-[#0D1B2A] lg:text-6xl xl:text-7xl">
+            <h1 className="mb-6 text-4xl font-bold leading-tight text-[#0D1B2A] lg:text-6xl xl:text-7xl">
               Bot ve Rakipleri <br />
               <span className="text-[#1BCFB4]">Reklamlarınızdan Uzak Tutun</span> 🚫
             </h1>
             <p className="mx-auto max-w-3xl text-xl text-gray-600 lg:text-2xl">
-              AdGuardy, Google Ads kampanyalarınızı bot ve rakip tıklamalardan korur. 
-              2 dakikada sitenizi bağlayın, gereksiz tıklamalara veda edin.
+              AdGuardy, Google Ads kampanyalarınızı bot ve rakip tıklamalardan korur.
+              5 dakikada sitenizi bağlayın, gereksiz tıklamalara veda edin.
             </p>
           </motion.div>
 
@@ -29,37 +29,68 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-col gap-4 sm:flex-row"
           >
-            <button className="btn-primary flex items-center justify-center gap-2 text-lg">
+            <a href="/demo-request" className="btn-primary flex items-center justify-center gap-2 text-lg">
               <span>Ücretsiz Başla</span>
               <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
-            </button>
-            <button className="btn-secondary flex items-center justify-center gap-2 text-lg">
+            </a>
+            <a href="/demo-request" className="btn-secondary flex items-center justify-center gap-2 text-lg">
               <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <span>Demo İzle</span>
-            </button>
+              <span>Demo Talep Et</span>
+            </a>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="mt-16 w-full max-w-5xl"
           >
-            <div className="relative rounded-2xl bg-white p-4 shadow-2xl">
-              <div className="aspect-video rounded-lg bg-gradient-to-br from-[#1BCFB4]/20 to-[#3B82F6]/20 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="mb-4 flex justify-center">
-                    <svg className="h-24 w-24 text-[#1BCFB4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="grid gap-6 md:grid-cols-3">
+              {/* Engellenen Bot Tıklamaları */}
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#1BCFB4] to-[#10B981] p-6 shadow-xl">
+                <div className="relative z-10">
+                  <div className="mb-4 flex items-center justify-between">
+                    <svg className="h-12 w-12 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                    </svg>
+                  </div>
+                  <h3 className="mb-2 text-4xl font-bold text-white">50K+</h3>
+                  <p className="text-lg font-medium text-white/90">Engellenen Bot Tıklaması</p>
+                </div>
+                <div className="absolute right-0 top-0 h-32 w-32 translate-x-8 -translate-y-8 rounded-full bg-white/10"></div>
+              </div>
+
+              {/* Para Tasarrufu */}
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#3B82F6] to-[#2563EB] p-6 shadow-xl">
+                <div className="relative z-10">
+                  <div className="mb-4 flex items-center justify-between">
+                    <svg className="h-12 w-12 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="mb-2 text-4xl font-bold text-white">₺250K+</h3>
+                  <p className="text-lg font-medium text-white/90">Tasarruf Edildi</p>
+                </div>
+                <div className="absolute right-0 top-0 h-32 w-32 translate-x-8 -translate-y-8 rounded-full bg-white/10"></div>
+              </div>
+
+              {/* Korunan Web Siteleri */}
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#8B5CF6] to-[#7C3AED] p-6 shadow-xl">
+                <div className="relative z-10">
+                  <div className="mb-4 flex items-center justify-between">
+                    <svg className="h-12 w-12 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                   </div>
-                  <p className="text-lg font-semibold text-gray-600">Dashboard Önizlemesi</p>
+                  <h3 className="mb-2 text-4xl font-bold text-white">25+</h3>
+                  <p className="text-lg font-medium text-white/90">Korunan Web Sitesi</p>
                 </div>
+                <div className="absolute right-0 top-0 h-32 w-32 translate-x-8 -translate-y-8 rounded-full bg-white/10"></div>
               </div>
             </div>
           </motion.div>

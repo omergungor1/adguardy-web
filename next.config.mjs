@@ -2,7 +2,7 @@
 const nextConfig = {
   // Vercel deployment optimizasyonları
   poweredByHeader: false,
-  
+
   // Image optimizasyonu
   images: {
     formats: ['image/avif', 'image/webp'],
@@ -16,6 +16,14 @@ const nextConfig = {
 
   // React strict mode
   reactStrictMode: true,
+
+  // Output standalone için optimizasyon
+  output: 'standalone',
+
+  // Experimental optimizasyonlar
+  experimental: {
+    optimizePackageImports: ['framer-motion'],
+  },
 
   // Headers - CDN ve güvenlik için
   async headers() {
@@ -41,8 +49,65 @@ const nextConfig = {
           },
         ],
       },
+      // Statik dosyalar için agresif cache
       {
         source: '/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      // tracker.js için özel cache stratejisi
+      {
+        source: '/js/tracker.js',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=86400, s-maxage=86400, stale-while-revalidate=43200',
+          },
+          {
+            key: 'Content-Type',
+            value: 'application/javascript; charset=utf-8',
+          },
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*',
+          },
+          {
+            key: 'Access-Control-Allow-Methods',
+            value: 'GET, OPTIONS',
+          },
+          {
+            key: 'Timing-Allow-Origin',
+            value: '*',
+          },
+        ],
+      },
+      // Tüm JS dosyaları için cache
+      {
+        source: '/js/:path*.js',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      // İkon ve görseller için cache
+      {
+        source: '/:path*.(ico|jpg|jpeg|png|gif|svg|webp|avif)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      // Font dosyaları için cache
+      {
+        source: '/:path*.(woff|woff2|ttf|otf|eot)',
         headers: [
           {
             key: 'Cache-Control',

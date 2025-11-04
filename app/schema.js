@@ -3,5 +3,5 @@ export const organizationSchema = {
   "@type": "Organization",
   "name": "AdGuardy",
   "url": "https://adguardy.com",
-  "description": "Google Ads kampanyalarını bot ve rakip tıklamalardan koruyan SaaS platformu"
+  "description": "Google Ads kampanyalarını bot ve rakip tıklamalardan koruyan yazılım hizmeti"
 };

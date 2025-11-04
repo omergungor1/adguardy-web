@@ -68,7 +68,7 @@ export default function HowItWorks() {
                 </p>
               </div>
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
+                <div className="hidden pl-8 lg:block absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 z-10">
                   <svg className="h-8 w-8 text-[#1BCFB4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
@@ -77,20 +77,6 @@ export default function HowItWorks() {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-12 text-center"
-        >
-          <div className="inline-block rounded-xl bg-white p-6 shadow-lg">
-            <p className="text-lg text-gray-700">
-              <span className="font-semibold text-[#1BCFB4]">İsteğe bağlı:</span> Sitenize izleme kodu ekleyin – daha detaylı koruma için.
-            </p>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

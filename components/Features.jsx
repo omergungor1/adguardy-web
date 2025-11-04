@@ -10,7 +10,7 @@ const features = [
       </svg>
     ),
     title: "Gerçek Zamanlı Bot Engelleme",
-    description: "Botları anında tespit edin ve kampanyalarınızdan uzak tutun. Google'dan 24 saat önce koruma."
+    description: "Botları anında tespit edin ve kampanyalarınızdan uzak tutun."
   },
   {
     icon: (
@@ -47,7 +47,7 @@ const features = [
       </svg>
     ),
     title: "Google Ads ile Entegre",
-    description: "Google Ads hesabınızla sorunsuz entegrasyon. Kurulum 2 dakika."
+    description: "Google Ads hesabınızla sorunsuz entegrasyon."
   },
   {
     icon: (

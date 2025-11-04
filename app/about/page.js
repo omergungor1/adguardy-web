@@ -26,8 +26,8 @@ export default function AboutPage() {
               <section>
                 <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">Misyonumuz</h2>
                 <p className="text-lg leading-relaxed text-gray-700">
-                  AdGuardy, dijital reklam dünyasında işletmelerin karşılaştığı en büyük problemlerden biri olan 
-                  bot ve rakip tıklamalarını çözmek için kuruldu. Amacımız, reklam bütçelerinizin her kuruşunun 
+                  AdGuardy, dijital reklam dünyasında işletmelerin karşılaştığı en büyük problemlerden biri olan
+                  bot ve rakip tıklamalarını çözmek için kuruldu. Amacımız, reklam bütçelerinizin her kuruşunun
                   gerçek potansiyel müşterilere ulaşmasını sağlamak ve ROI'nizi maksimize etmektir.
                 </p>
               </section>
@@ -35,12 +35,12 @@ export default function AboutPage() {
               <section>
                 <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">Hikayemiz</h2>
                 <p className="text-lg leading-relaxed text-gray-700">
-                  Google Ads ile kampanya yürüten yüzlerce işletme, bütçelerinin önemli bir kısmının 
-                  bot tıklamalara gittiğini fark etti. Google'ın sunduğu koruma mekanizmaları ise 24 saat 
+                  Google Ads ile kampanya yürüten yüzlerce işletme, bütçelerinin önemli bir kısmının
+                  bot tıklamalara gittiğini fark etti. Google'ın sunduğu koruma mekanizmaları ise 24 saat
                   sonra devreye giriyor ve bu sürede binlerce lira boşa harcanıyordu.
                 </p>
                 <p className="mt-4 text-lg leading-relaxed text-gray-700">
-                  İşte bu noktada AdGuardy doğdu. Gerçek zamanlı bot engelleme, gelişmiş makine öğrenimi 
+                  İşte bu noktada AdGuardy doğdu. Gerçek zamanlı bot engelleme, gelişmiş makine öğrenimi
                   algoritmaları ve kullanıcı dostu bir arayüz ile reklam kampanyalarınızı tam koruma altına alıyoruz.
                 </p>
               </section>
@@ -94,7 +94,7 @@ export default function AboutPage() {
                     <svg className="mt-1 h-6 w-6 flex-shrink-0 text-[#10B981]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>2 dakikada kurulum, hemen koruma başlar</span>
+                    <span>5 dakikada kurulum, hemen koruma başlar</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <svg className="mt-1 h-6 w-6 flex-shrink-0 text-[#10B981]" fill="none" stroke="currentColor" viewBox="0 0 24 24">

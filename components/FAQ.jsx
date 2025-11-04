@@ -6,19 +6,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 const faqs = [
   {
     question: "AdGuardy nedir?",
-    answer: "AdGuardy, Google Ads kampanyalarınızı bot ve rakip tıklamalardan koruyan gelişmiş bir SaaS platformudur. Gereksiz reklam harcamalarınızı azaltır ve ROI'nizi artırır."
+    answer: "AdGuardy, Google Ads kampanyalarınızı bot ve rakip tıklamalardan koruyan gelişmiş bir yazılım hizmetidir. Gereksiz reklam harcamalarınızı azaltır ve reklam getirininizi artırır."
   },
   {
-    question: "Google Ads hesabıma nasıl bağlanıyor?",
-    answer: "Google Ads API'sini kullanarak güvenli bir şekilde bağlantı kuruyoruz. Sadece okuma ve engelleme listesi yönetimi yetkisi istiyoruz. Kampanya verilerinize müdahale etmiyoruz."
-  },
-  {
-    question: "Verilerim güvenli mi?",
-    answer: "Evet, tamamen güvenli. Tüm veriler anonim olarak saklanır, 3 ay sonra otomatik silinir ve kişisel veri toplanmaz. KVKK ve GDPR standartlarına tam uyumluyuz."
-  },
-  {
-    question: "Takip kodu zorunlu mu?",
-    answer: "Hayır, zorunlu değil. Ancak daha detaylı koruma ve davranış analizi için sitenize opsiyonel bir takip kodu ekleyebilirsiniz. Bu tamamen isteğe bağlıdır."
+    question: "Hesabınız nasıl bağlanıyor?",
+    answer: "Hesabınızı güvenli bir şekilde bağlantı kuruyoruz. Sadece okuma ve engelleme listesi yönetimi yetkisi istiyoruz. Kampanyalarınızın verilerine müdahale etmiyoruz."
   },
   {
     question: "KVKK'ya uygun mu?",
@@ -26,15 +18,15 @@ const faqs = [
   },
   {
     question: "Botları nasıl tespit ediyor?",
-    answer: "Makine öğrenimi algoritmaları, IP analizi, cihaz fingerprinting, davranış analizi ve VPN/proxy tespiti gibi çoklu katmanlı yöntemlerle botları %99 doğrulukla tespit ediyoruz."
+    answer: "Makine öğrenimi algoritmaları, IP analizi, cihaz tanıma, davranış analizi ve VPN/proxy tespiti gibi çoklu katmanlı yöntemlerle botları %99 doğrulukla tespit ediyoruz."
   },
   {
     question: "Kurulum ne kadar sürer?",
-    answer: "Sadece 2 dakika! Domain ekleyin, Google Ads hesabınızı bağlayın ve onaylayın. Hemen koruma başlar."
+    answer: "Sadece 5 dakika! Domain ekleyin, Google Ads hesabınızı bağlayın ve onaylayın. Hemen koruma başlar."
   },
   {
     question: "İptal edebilir miyim?",
-    answer: "Evet, istediğiniz zaman iptal edebilirsiniz. Herhangi bir ceza veya bağlayıcı sözleşme yok. İptal sonrası verileriniz tamamen silinir."
+    answer: "Evet, istediğiniz zaman iptal edebilirsiniz. Herhangi bir ceza veya bağlayıcı sözleşme yok."
   }
 ];
 
@@ -42,7 +34,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20  bg-gradient-to-br from-[#F9FAFB] to-[#E0F7F4]">
       <div className="container mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -75,9 +67,8 @@ export default function FAQ() {
               >
                 <span className="text-lg font-semibold text-[#0D1B2A]">{faq.question}</span>
                 <svg
-                  className={`h-6 w-6 flex-shrink-0 text-[#1BCFB4] transition-transform ${
-                    openIndex === index ? 'rotate-180' : ''
-                  }`}
+                  className={`h-6 w-6 flex-shrink-0 text-[#1BCFB4] transition-transform ${openIndex === index ? 'rotate-180' : ''
+                    }`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

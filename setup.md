@@ -50,7 +50,7 @@ Aşağıdaki prompt’u **direkt Cursor’a yapıştırabilirsin** — tüm tasa
 >
 > * **Hero Section:**
 >   Başlık: “Bot ve Rakipleri Reklamlarınızdan Uzak Tutun 🚫”
->   Alt başlık: “AdGuardy, Google Ads kampanyalarınızı bot ve rakip tıklamalardan korur. 2 dakikada sitenizi bağlayın, gereksiz tıklamalara veda edin.”
+>   Alt başlık: “AdGuardy, Google Ads kampanyalarınızı bot ve rakip tıklamalardan korur. 5 dakikada sitenizi bağlayın, gereksiz tıklamalara veda edin.”
 >   CTA butonları: “Ücretsiz Başla” ve “Demo İzle”
 >   Görsel: Güven veren bir dashboard illüstrasyonu (veya animasyon)
 >
@@ -103,7 +103,7 @@ Aşağıdaki prompt’u **direkt Cursor’a yapıştırabilirsin** — tüm tasa
 >
 > * **CTA Bölümü (Footer öncesi):**
 >   Başlık: “Botlara veda edin. Gerçek tıklamaları koruyun.”
->   Alt yazı: “2 dakika içinde reklam korumanızı başlatın.”
+>   Alt yazı: “5 dakika içinde reklam korumanızı başlatın.”
 >   Buton: “Ücretsiz Başla”
 >
 > * **Footer:**
@@ -127,7 +127,6 @@ Aşağıdaki prompt’u **direkt Cursor’a yapıştırabilirsin** — tüm tasa
 > * Robots.txt, sitemap.xml
 > * Schema.org markup (SaaSOrganization)
 > * Privacy ve Terms sayfalarına footer linki
-> * Güvenlik badge alanı (“Google Transparent Click Tracker Certification – Başvuru Aşamasında”)
 > * SSL aktif (https)
 >
 > ---

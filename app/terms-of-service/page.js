@@ -26,8 +26,8 @@ export default function TermsOfServicePage() {
               <section>
                 <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">1. Hizmetin Kabul Edilmesi</h2>
                 <p className="text-lg leading-relaxed text-gray-700">
-                  AdGuardy hizmetini kullanarak, bu Kullanım Koşullarını ve Gizlilik Politikamızı kabul etmiş olursunuz. 
-                  Bu koşulları kabul etmiyorsanız, lütfen hizmeti kullanmayınız. Hizmetimizi kullanmaya devam ettiğinizde, 
+                  AdGuardy hizmetini kullanarak, bu Kullanım Koşullarını ve Gizlilik Politikamızı kabul etmiş olursunuz.
+                  Bu koşulları kabul etmiyorsanız, lütfen hizmeti kullanmayınız. Hizmetimizi kullanmaya devam ettiğinizde,
                   bu koşullara uyduğunuzu beyan etmiş sayılırsınız.
                 </p>
               </section>
@@ -35,7 +35,7 @@ export default function TermsOfServicePage() {
               <section>
                 <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">2. Hizmet Tanımı</h2>
                 <p className="text-lg leading-relaxed text-gray-700">
-                  AdGuardy, Google Ads kampanyalarınızı bot ve rakip tıklamalardan korumak için gelişmiş bir SaaS platformudur. 
+                  AdGuardy, Google Ads kampanyalarınızı bot ve rakip tıklamalardan korumak için gelişmiş bir yazılım hizmetidir.
                   Hizmetimiz aşağıdaki özellikleri içerir:
                 </p>
                 <ul className="mt-4 space-y-2 pl-6 text-lg text-gray-700">
@@ -164,7 +164,7 @@ export default function TermsOfServicePage() {
               <section>
                 <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">6. Fikri Mülkiyet Hakları</h2>
                 <p className="text-lg leading-relaxed text-gray-700">
-                  AdGuardy platformu, logosu, tasarımı ve tüm içeriği AdGuardy'nin fikri mülkiyetidir ve 
+                  AdGuardy platformu, logosu, tasarımı ve tüm içeriği AdGuardy'nin fikri mülkiyetidir ve
                   telif hakkı yasaları ile korunmaktadır. Yazılı izin olmadan kopyalanamaz, çoğaltılamaz veya dağıtılamaz.
                 </p>
               </section>
@@ -174,14 +174,14 @@ export default function TermsOfServicePage() {
                 <div className="space-y-4 text-lg text-gray-700">
                   <p><strong>Hizmet Garantisi:</strong></p>
                   <p>
-                    AdGuardy, hizmetin %99.9 uptime ile sunulması için çaba gösterir. Ancak, internet bağlantısı, 
+                    AdGuardy, hizmetin %99.9 uptime ile sunulması için çaba gösterir. Ancak, internet bağlantısı,
                     sunucu problemleri veya beklenmedik teknik sorunlar nedeniyle kesintiler yaşanabilir.
                   </p>
-                  
+
                   <div className="rounded-lg bg-gray-100 p-6">
                     <p className="font-semibold">Sorumluluk Sınırlaması:</p>
                     <p className="mt-2">
-                      AdGuardy, hizmetin kullanımından kaynaklanan dolaylı, özel veya tesadüfi zararlardan 
+                      AdGuardy, hizmetin kullanımından kaynaklanan dolaylı, özel veya tesadüfi zararlardan
                       sorumlu tutulamaz. Sorumluluğumuz, ödediğiniz abonelik ücreti ile sınırlıdır.
                     </p>
                   </div>
@@ -191,7 +191,7 @@ export default function TermsOfServicePage() {
               <section>
                 <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">8. Veri ve Gizlilik</h2>
                 <p className="text-lg leading-relaxed text-gray-700">
-                  Verilerinizin işlenmesi ve korunması hakkında detaylı bilgi için 
+                  Verilerinizin işlenmesi ve korunması hakkında detaylı bilgi için
                   <a href="/privacy-policy" className="mx-1 font-semibold text-[#1BCFB4] hover:underline">
                     Gizlilik Politikamızı
                   </a>
@@ -202,8 +202,8 @@ export default function TermsOfServicePage() {
               <section>
                 <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">9. Değişiklikler</h2>
                 <p className="text-lg leading-relaxed text-gray-700">
-                  Bu Kullanım Koşulları zaman zaman güncellenebilir. Önemli değişiklikler için sizi e-posta 
-                  ile bilgilendireceğiz. Değişikliklerden sonra hizmeti kullanmaya devam etmeniz, yeni koşulları 
+                  Bu Kullanım Koşulları zaman zaman güncellenebilir. Önemli değişiklikler için sizi e-posta
+                  ile bilgilendireceğiz. Değişikliklerden sonra hizmeti kullanmaya devam etmeniz, yeni koşulları
                   kabul ettiğiniz anlamına gelir.
                 </p>
               </section>
@@ -211,7 +211,7 @@ export default function TermsOfServicePage() {
               <section>
                 <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">10. Uygulanacak Hukuk</h2>
                 <p className="text-lg leading-relaxed text-gray-700">
-                  Bu sözleşme Türkiye Cumhuriyeti kanunlarına tabidir. Herhangi bir uyuşmazlık durumunda, 
+                  Bu sözleşme Türkiye Cumhuriyeti kanunlarına tabidir. Herhangi bir uyuşmazlık durumunda,
                   İstanbul mahkemeleri ve icra daireleri yetkilidir.
                 </p>
               </section>
@@ -226,8 +226,8 @@ export default function TermsOfServicePage() {
                   <p><strong>Destek:</strong> support@adguardy.com</p>
                 </div>
                 <div className="mt-6">
-                  <a 
-                    href="/contact" 
+                  <a
+                    href="/contact"
                     className="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-[#1BCFB4] transition-all hover:bg-gray-100"
                   >
                     Bize Ulaşın

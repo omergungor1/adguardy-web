@@ -17,7 +17,7 @@ const inter = Inter({
 
 export const metadata = {
   title: 'AdGuardy - Bot Koruması',
-  description: 'AdGuardy, Google Ads kampanyalarınızı bot ve rakip tıklamalardan korur. 2 dakikada sitenizi bağlayın, gereksiz tıklamalara veda edin.',
+  description: 'AdGuardy, Google Ads kampanyalarınızı bot ve rakip tıklamalardan korur. 5 dakikada sitenizi bağlayın, gereksiz tıklamalara veda edin.',
   keywords: ['Google Ads', 'Bot Engelleme', 'Tıklama Koruması', 'AdGuardy', 'Reklam Güvenliği', 'KVKK Uyumlu'],
   authors: [{ name: 'AdGuardy Team' }],
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),

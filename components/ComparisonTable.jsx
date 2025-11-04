@@ -6,9 +6,10 @@ const comparisons = [
   { feature: "Gerçek zamanlı engelleme", adguardy: true, googleAds: false, googleNote: "24 saat sonra" },
   { feature: "Tıklama limiti özelleştirme", adguardy: true, googleAds: false },
   { feature: "Ziyaretçi analitiği", adguardy: true, googleAds: false },
-  { feature: "VPN trafiği hariç tutma", adguardy: true, googleAds: false },
+  { feature: "VPN/Proxy trafiği hariç tutma", adguardy: true, googleAds: false },
   { feature: "Oturum davranışı kaydı", adguardy: true, googleAds: false },
   { feature: "Rakip tıklama engelleme", adguardy: true, googleAds: false },
+  { feature: "Gizli modda çalışma", adguardy: true, googleAds: false },
 ];
 
 export default function ComparisonTable() {
@@ -30,12 +31,68 @@ export default function ComparisonTable() {
           </p>
         </motion.div>
 
+        {/* Mobil Görünüm - Kart Tabanlı */}
+        <div className="mx-auto max-w-4xl md:hidden">
+          {comparisons.map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              className="mb-4 overflow-hidden rounded-xl bg-white shadow-lg"
+            >
+              <div className="bg-gradient-to-r from-[#1BCFB4] to-[#10B981] px-4 py-3">
+                <h3 className="text-base font-semibold text-white">{item.feature}</h3>
+              </div>
+              <div className="grid grid-cols-2 gap-4 p-4">
+                {/* AdGuardy */}
+                <div className="text-center">
+                  <p className="mb-2 text-sm font-medium text-gray-600">AdGuardy</p>
+                  <div className="flex justify-center">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100">
+                      <svg className="h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                {/* Google Ads */}
+                <div className="text-center">
+                  <p className="mb-2 text-sm font-medium text-gray-600">Google Ads</p>
+                  {item.googleAds ? (
+                    <div className="flex justify-center">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100">
+                        <svg className="h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="flex flex-col items-center gap-1">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-red-100">
+                        <svg className="h-6 w-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      </div>
+                      {item.googleNote && (
+                        <span className="text-xs text-gray-500">{item.googleNote}</span>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Tablet & Desktop Görünüm - Tablo */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mx-auto max-w-4xl overflow-hidden rounded-2xl shadow-xl"
+          className="mx-auto hidden max-w-4xl overflow-hidden rounded-2xl shadow-xl md:block"
         >
           <div className="overflow-x-auto">
             <table className="w-full">
@@ -102,9 +159,9 @@ export default function ComparisonTable() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="mt-12 text-center"
         >
-          <button className="btn-primary text-lg">
+          <a href="/demo-request" className="btn-primary text-lg inline-block">
             AdGuardy ile Başlayın
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>

@@ -10,9 +10,7 @@ export default function Header() {
 
   const navigation = [
     { name: 'Ana Sayfa', href: '/' },
-    { name: 'Özellikler', href: '/#features' },
-    { name: 'Fiyatlandırma', href: '/#pricing' },
-    { name: 'SSS', href: '/#faq' },
+    { name: 'Fiyatlandırma', href: '/pricing' },
     { name: 'Hakkımızda', href: '/about' },
     { name: 'İletişim', href: '/contact' },
   ];
@@ -59,11 +57,10 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-semibold leading-6 transition-colors ${
-                  pathname === item.href
-                    ? 'text-[#1BCFB4]'
-                    : 'text-gray-700 hover:text-[#1BCFB4]'
-                }`}
+                className={`text-sm font-semibold leading-6 transition-colors ${pathname === item.href
+                  ? 'text-[#1BCFB4]'
+                  : 'text-gray-700 hover:text-[#1BCFB4]'
+                  }`}
               >
                 {item.name}
               </Link>
@@ -72,11 +69,11 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
-            <Link href="/login" className="text-sm font-semibold leading-6 text-gray-700 hover:text-[#1BCFB4]">
+            <a href="https://app.adguardy.com/login" className="flex items-center text-sm font-semibold leading-6 text-gray-700 hover:text-[#1BCFB4]">
               Giriş Yap
-            </Link>
+            </a>
             <Link
-              href="/signup"
+              href="/demo-request"
               className="rounded-lg bg-gradient-to-r from-[#1BCFB4] to-[#10B981] px-6 py-2 text-sm font-semibold text-white shadow-md transition-all hover:shadow-lg hover:scale-105"
             >
               Ücretsiz Başla
@@ -92,26 +89,24 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 transition-colors ${
-                    pathname === item.href
-                      ? 'bg-[#1BCFB4]/10 text-[#1BCFB4]'
-                      : 'text-gray-700 hover:bg-gray-50'
-                  }`}
+                  className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 transition-colors ${pathname === item.href
+                    ? 'bg-[#1BCFB4]/10 text-[#1BCFB4]'
+                    : 'text-gray-700 hover:bg-gray-50'
+                    }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
               <div className="mt-6 flex flex-col gap-3">
-                <Link
-                  href="/login"
+                <a
+                  href="https://app.adguardy.com/login"
                   className="block rounded-lg px-3 py-2 text-center text-base font-semibold text-gray-700 hover:bg-gray-50"
-                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Giriş Yap
-                </Link>
+                </a>
                 <Link
-                  href="/signup"
+                  href="/demo-request"
                   className="block rounded-lg bg-gradient-to-r from-[#1BCFB4] to-[#10B981] px-3 py-2 text-center text-base font-semibold text-white"
                   onClick={() => setMobileMenuOpen(false)}
                 >
