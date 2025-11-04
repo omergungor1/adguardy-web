@@ -97,7 +97,7 @@ const nextConfig = {
       },
       // İkon ve görseller için cache
       {
-        source: '/:path*.(ico|jpg|jpeg|png|gif|svg|webp|avif)',
+        source: '/:path*\\.(ico|jpg|jpeg|png|gif|svg|webp|avif)',
         headers: [
           {
             key: 'Cache-Control',
@@ -107,7 +107,7 @@ const nextConfig = {
       },
       // Font dosyaları için cache
       {
-        source: '/:path*.(woff|woff2|ttf|otf|eot)',
+        source: '/:path*\\.(woff|woff2|ttf|otf|eot)',
         headers: [
           {
             key: 'Cache-Control',
