@@ -25,18 +25,13 @@ export default function Footer() {
             <h3 className="mb-4 text-lg font-semibold">Ürün</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/#features" className="text-gray-400 transition-colors hover:text-[#1BCFB4]">
-                  Özellikler
+                <Link href="/" className="text-gray-400 transition-colors hover:text-[#1BCFB4]">
+                  Ana Sayfa
                 </Link>
               </li>
               <li>
-                <Link href="/#pricing" className="text-gray-400 transition-colors hover:text-[#1BCFB4]">
+                <Link href="/pricing" className="text-gray-400 transition-colors hover:text-[#1BCFB4]">
                   Fiyatlandırma
-                </Link>
-              </li>
-              <li>
-                <Link href="/#faq" className="text-gray-400 transition-colors hover:text-[#1BCFB4]">
-                  SSS
                 </Link>
               </li>
             </ul>
