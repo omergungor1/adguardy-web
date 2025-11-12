@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -134,32 +135,35 @@ export default function TermsOfServicePage() {
 
               <section>
                 <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">5. Yasak Kullanımlar</h2>
-                <p className="mb-4 text-lg text-gray-700">Hizmetimizi aşağıdaki amaçlarla kullanmayı kabul etmiyorsunuz:</p>
+                <p className="mb-4 text-lg text-gray-700">
+                  Hizmetimizi yalnızca yasal, dürüst ve etik amaçlarla kullanmayı kabul edersiniz. Aşağıdaki faaliyetler kesinlikle yasaktır:
+                </p>
                 <div className="rounded-lg border-2 border-red-200 bg-red-50 p-6">
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start gap-2">
                       <span className="text-red-600">✗</span>
-                      <span>Yasa dışı faaliyetler veya hileli amaçlar için</span>
+                      <span>Her türlü yasa dışı, dolandırıcılık veya aldatıcı faaliyetlerde bulunmak</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-600">✗</span>
-                      <span>Başkalarının haklarını ihlal etmek için</span>
+                      <span>Başkalarının fikri mülkiyet, gizlilik veya veri koruma haklarını ihlal etmek</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-600">✗</span>
-                      <span>Sistemimizi veya hizmetimizi bozmak için</span>
+                      <span>Sistemlerimize, sunucularımıza veya kullanıcı verilerine yetkisiz erişim sağlamak veya bunları bozmak</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-600">✗</span>
-                      <span>Kötü amaçlı yazılım yaymak için</span>
+                      <span>Kötü amaçlı yazılım, izinsiz kod veya zararlı komut dosyaları yaymak</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-600">✗</span>
-                      <span>Başka kullanıcıların hesaplarına yetkisiz erişim sağlamak için</span>
+                      <span>Adguardy’yi veya kullanıcı verilerini Google’ın Şeffaf Tıklama İzleyici gerekliliklerine aykırı biçimde kullanmak</span>
                     </li>
                   </ul>
                 </div>
               </section>
+
 
               <section>
                 <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">6. Fikri Mülkiyet Hakları</h2>
@@ -170,23 +174,36 @@ export default function TermsOfServicePage() {
               </section>
 
               <section>
-                <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">7. Hizmet Garanti ve Sorumluluk</h2>
+                <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">7. Hizmet Garantisi ve Sorumluluk</h2>
                 <div className="space-y-4 text-lg text-gray-700">
                   <p><strong>Hizmet Garantisi:</strong></p>
                   <p>
-                    AdGuardy, hizmetin %99.9 uptime ile sunulması için çaba gösterir. Ancak, internet bağlantısı,
-                    sunucu problemleri veya beklenmedik teknik sorunlar nedeniyle kesintiler yaşanabilir.
+                    AdGuardy, sistemin güvenilir ve kesintisiz çalışması için en yüksek standartlarda koruma ve izleme
+                    mekanizmaları uygular. Ancak, internet altyapısı, üçüncü taraf servisleri veya beklenmedik teknik
+                    hatalar nedeniyle kısa süreli kesintiler yaşanabilir.
+                  </p>
+                  <p>
+                    Sistemimiz zararlı trafiği ve bot aktivitelerini tespit edip engellemek için gelişmiş filtreleme
+                    yöntemleri kullanır. Buna rağmen, yeni veya bilinmeyen IP adreslerinin ilk etkileşimi sırasında
+                    sınırlı izin verilebilir. Bu nedenle %100 oranında koruma garantisi verilmez.
+                  </p>
+                  <p>
+                    AdGuardy yalnızca web siteniz üzerinde gerçekleşen trafik etkileşimlerini analiz eder. Arama
+                    motoru eklentileri veya harici platformlar üzerinden yapılan sahte tıklamalar sistem tarafından
+                    tespit edilmez veya engellenmez.
                   </p>
 
                   <div className="rounded-lg bg-gray-100 p-6">
                     <p className="font-semibold">Sorumluluk Sınırlaması:</p>
                     <p className="mt-2">
                       AdGuardy, hizmetin kullanımından kaynaklanan dolaylı, özel veya tesadüfi zararlardan
-                      sorumlu tutulamaz. Sorumluluğumuz, ödediğiniz abonelik ücreti ile sınırlıdır.
+                      sorumlu tutulamaz. Toplam sorumluluk, müşterinin ilgili dönem için ödediği abonelik
+                      ücreti ile sınırlıdır.
                     </p>
                   </div>
                 </div>
               </section>
+
 
               <section>
                 <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">8. Veri ve Gizlilik</h2>
@@ -195,42 +212,55 @@ export default function TermsOfServicePage() {
                   <a href="/privacy-policy" className="mx-1 font-semibold text-[#1BCFB4] hover:underline">
                     Gizlilik Politikamızı
                   </a>
-                  inceleyiniz. KVKK ve GDPR standartlarına tam uyumluyuz.
+                  inceleyiniz. KVKK ve GDPR standartlarına uyumludur.
                 </p>
               </section>
 
               <section>
                 <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">9. Değişiklikler</h2>
                 <p className="text-lg leading-relaxed text-gray-700">
-                  Bu Kullanım Koşulları zaman zaman güncellenebilir. Önemli değişiklikler için sizi e-posta
-                  ile bilgilendireceğiz. Değişikliklerden sonra hizmeti kullanmaya devam etmeniz, yeni koşulları
-                  kabul ettiğiniz anlamına gelir.
+                  Bu Kullanım Koşulları zaman zaman güncellenebilir. Adguardy, kullanım koşullarını gerektiğinde güncelleyebilir. Yapılan değişiklikler bu sayfada yayımlandığı anda yürürlüğe girer. Kullanıcılar en güncel koşulları her zaman bu sayfadan görüntüleyebilir.
                 </p>
               </section>
 
               <section>
-                <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">10. Uygulanacak Hukuk</h2>
+                <h2 className="mb-4 text-3xl font-semibold text-[#0D1B2A]">10. Uygulanacak Hukuk ve Yetkili Mahkeme</h2>
                 <p className="text-lg leading-relaxed text-gray-700">
-                  Bu sözleşme Türkiye Cumhuriyeti kanunlarına tabidir. Herhangi bir uyuşmazlık durumunda,
-                  İstanbul mahkemeleri ve icra daireleri yetkilidir.
+                  Bu sözleşme, Türkiye Cumhuriyeti kanunlarına tabidir ve bu kanunlara göre yorumlanır.
+                  Taraflar arasında doğabilecek uyuşmazlıkların çözümünde Bursa mahkemeleri ve icra daireleri
+                  yetkilidir.
                 </p>
               </section>
 
+
               <section className="rounded-xl bg-gradient-to-br from-[#1BCFB4] to-[#10B981] p-8 text-white">
                 <h2 className="mb-4 text-3xl font-semibold">İletişim</h2>
-                <p className="mb-4 text-lg text-white/90">
-                  Kullanım koşulları hakkında sorularınız için:
+                <p className="mb-4 text-lg">
+                  Kullanım koşulları hakkında sorularınız için bizimle{' '}
+                  <Link href="/contact" className="underline hover:text-gray-200 transition-colors">
+                    iletişim sayfası
+                  </Link>
+                  {' '}üzerinden veya{' '}
+                  <a href="mailto:info@adguardy.com" className="underline hover:text-gray-200 transition-colors">
+                    info@adguardy.com
+                  </a>
+                  {' '}adresinden iletişime geçebilirsiniz.
                 </p>
                 <div className="space-y-2 text-lg">
-                  <p><strong>E-posta:</strong> legal@adguardy.com</p>
-                  <p><strong>Destek:</strong> support@adguardy.com</p>
+                  <p>
+                    <strong>E-posta:</strong>{' '}
+                    <a href="mailto:info@adguardy.com" className="underline hover:text-gray-200 transition-colors">
+                      info@adguardy.com
+                    </a>
+                  </p>
+                  <p><strong>Adres:</strong> Bursa, Türkiye</p>
                 </div>
                 <div className="mt-6">
                   <a
                     href="/contact"
                     className="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-[#1BCFB4] transition-all hover:bg-gray-100"
                   >
-                    Bize Ulaşın
+                    İletişim Formu
                   </a>
                 </div>
               </section>
